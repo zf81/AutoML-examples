@@ -9,4 +9,4 @@ Best Performing Model: Ensemble with a logloss of 0.637739. The baseline logloss
 Experiment 2: Regression <br>
 Dataset: Forest Fires <br>
 Dependent Variable: Rain <br>
-Best Performing Model Default_Xgboost with a logloss of 0.0237619. This was better compared to the baseline logloss value of 0.826252 <br>
+Best Performing Model: Default_Xgboost with a logloss of 0.0237619. This was better compared to the baseline logloss value of 0.826252 <br>
