@@ -1,0 +1,13 @@
+feature,mean_importance
+age,-0.01592519439951563
+creatinine_phosphokinase,-0.00619684703434773
+anaemia,0.0
+diabetes,0.0
+ejection_fraction,0.0
+serum_creatinine,0.0
+serum_sodium,0.0
+sex,0.0
+smoking,0.0
+DEATH_EVENT,0.0
+platelets,0.10869747737965108
+time,0.18561482177814245
