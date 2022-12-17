@@ -1,0 +1,182 @@
+{
+    "uid": "d1131c28-d8f5-42e2-bcda-89fa23f17b52",
+    "name": "5_Default_NeuralNetwork",
+    "preprocessing": [
+        {
+            "scale": [
+                {
+                    "scale": [
+                        12.454516414225381,
+                        1093.9299538874454,
+                        11.95808148778393,
+                        91641.56116348741,
+                        1.0233888047519428,
+                        4.719690114111586,
+                        0.46470524391147217,
+                        78.32421584477187
+                    ],
+                    "mean": [
+                        61.128970238095235,
+                        603.327380952381,
+                        38.81547619047619,
+                        266482.65779761906,
+                        1.394404761904762,
+                        136.60119047619048,
+                        0.6845238095238095,
+                        129.29166666666666
+                    ],
+                    "var": [
+                        155.11497911220945,
+                        1196682.7440121884,
+                        142.99571286848072,
+                        8398175732.481203,
+                        1.04732464569161,
+                        22.27547477324263,
+                        0.21595096371882086,
+                        6134.6827876984125
+                    ],
+                    "n_samples_seen": 168,
+                    "n_features_in": 8,
+                    "columns": [
+                        "age",
+                        "creatinine_phosphokinase",
+                        "ejection_fraction",
+                        "platelets",
+                        "serum_creatinine",
+                        "serum_sodium",
+                        "sex",
+                        "time"
+                    ],
+                    "scale_method": "scale_normal"
+                }
+            ],
+            "ml_task": "binary_classification",
+            "params": {
+                "columns_preprocessing": {
+                    "age": [
+                        "scale_normal"
+                    ],
+                    "creatinine_phosphokinase": [
+                        "scale_normal"
+                    ],
+                    "ejection_fraction": [
+                        "scale_normal"
+                    ],
+                    "platelets": [
+                        "scale_normal"
+                    ],
+                    "serum_creatinine": [
+                        "scale_normal"
+                    ],
+                    "serum_sodium": [
+                        "scale_normal"
+                    ],
+                    "sex": [
+                        "scale_normal"
+                    ],
+                    "time": [
+                        "scale_normal"
+                    ]
+                },
+                "target_preprocessing": [
+                    "na_exclude"
+                ],
+                "ml_task": "binary_classification"
+            }
+        }
+    ],
+    "learners": [
+        {
+            "library_version": "1.0.2",
+            "algorithm_name": "Neural Network",
+            "algorithm_short_name": "Neural Network",
+            "uid": "f12e39e7-3f7e-4f35-9ca7-678cee5706bb",
+            "params": {
+                "model_type": "Neural Network",
+                "ml_task": "binary_classification",
+                "n_jobs": -1,
+                "dense_1_size": 32,
+                "dense_2_size": 16,
+                "learning_rate": 0.05,
+                "seed": 5,
+                "explain_level": 2
+            },
+            "name": "learner_fold_0"
+        }
+    ],
+    "params": {
+        "additional": {
+            "max_rows_limit": null,
+            "max_cols_limit": null
+        },
+        "preprocessing": {
+            "columns_preprocessing": {
+                "age": [
+                    "scale_normal"
+                ],
+                "creatinine_phosphokinase": [
+                    "scale_normal"
+                ],
+                "ejection_fraction": [
+                    "scale_normal"
+                ],
+                "platelets": [
+                    "scale_normal"
+                ],
+                "serum_creatinine": [
+                    "scale_normal"
+                ],
+                "serum_sodium": [
+                    "scale_normal"
+                ],
+                "sex": [
+                    "scale_normal"
+                ],
+                "time": [
+                    "scale_normal"
+                ]
+            },
+            "target_preprocessing": [
+                "na_exclude"
+            ],
+            "ml_task": "binary_classification"
+        },
+        "validation_strategy": {
+            "validation_type": "split",
+            "train_ratio": 0.75,
+            "shuffle": true,
+            "stratify": true,
+            "X_path": "AutoML_2/X.data",
+            "y_path": "AutoML_2/y.data",
+            "results_path": "AutoML_2"
+        },
+        "learner": {
+            "model_type": "Neural Network",
+            "ml_task": "binary_classification",
+            "n_jobs": -1,
+            "dense_1_size": 32,
+            "dense_2_size": 16,
+            "learning_rate": 0.05,
+            "seed": 5,
+            "explain_level": 2
+        },
+        "automl_random_state": 1234,
+        "ml_task": "binary_classification",
+        "explain_level": 2,
+        "name": "5_Default_NeuralNetwork",
+        "status": "initialized",
+        "final_loss": null,
+        "train_time": null,
+        "data_type": "original",
+        "max_time_for_learner": 360.0
+    },
+    "saved": [
+        "5_Default_NeuralNetwork/learner_fold_0.neural_network"
+    ],
+    "predictions_fname": "5_Default_NeuralNetwork/predictions_validation.csv",
+    "metric_name": "logloss",
+    "final_loss": 1.1347040681095824,
+    "train_time": 1.6427693367004395,
+    "is_stacked": false,
+    "threshold": 0.5725102393041147
+}
